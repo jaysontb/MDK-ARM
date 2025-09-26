@@ -13,6 +13,12 @@
             "path": "../Src"
         }
     ],
-    "settings": {},
+    "settings": {
+        "files.associations": {
+            "mpu6050.h": "c",
+            "oled.h": "c",
+            "tim.h": "c"
+        }
+    },
     "extensions": {}
 }
