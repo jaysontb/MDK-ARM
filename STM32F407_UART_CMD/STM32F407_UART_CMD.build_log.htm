@@ -21,23 +21,33 @@ Target DLL:      Segger\JL2CM3.dll V2.99.26.0
 Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
-E:\ZDT闭环步进资料\Emm_V5.0闭环步进资料\例程_STM32F407\串口_RS232_RS485通讯控制\STM32F407_串口通讯__速度模式\MDK-ARM\STM32F407_UART_CMD.uvprojx
-Project File Date:  12/11/2024
+E:\gongxun1\car1\MDK-ARM\STM32F407_UART_CMD.uvprojx
+Project File Date:  09/29/2025
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\keil5\ARM\ARMCC\Bin'
 Rebuild target 'STM32F407_UART_CMD'
 assembling startup_stm32f407xx.s...
+compiling Emm_V5.c...
 compiling main.c...
 compiling gpio.c...
 compiling dma.c...
+compiling i2c.c...
+compiling tim.c...
 compiling usart.c...
 compiling stm32f4xx_it.c...
 compiling stm32f4xx_hal_msp.c...
-compiling Emm_V5.c...
-compiling stm32f4xx_hal_tim.c...
-compiling stm32f4xx_hal_tim_ex.c...
-compiling stm32f4xx_hal_uart.c...
+compiling IIC.c...
+compiling inv_mpu.c...
+compiling inv_mpu_dmp_motion_driver.c...
+compiling motor.c...
+compiling mpu6050.c...
+compiling oled.c...
+compiling oled_font.c...
+compiling servo.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_i2c.c...
+compiling stm32f4xx_hal_i2c_ex.c...
 compiling stm32f4xx_hal_rcc.c...
 compiling stm32f4xx_hal_rcc_ex.c...
 compiling stm32f4xx_hal_flash.c...
@@ -51,82 +61,13 @@ compiling stm32f4xx_hal_pwr_ex.c...
 compiling stm32f4xx_hal_cortex.c...
 compiling stm32f4xx_hal.c...
 compiling stm32f4xx_hal_exti.c...
-compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_uart.c...
 linking...
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_rcc.o(i.HAL_RCC_OscConfig).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.UART_SetConfig).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_dma.o(i.HAL_DMA_IRQHandler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_gpio.o(i.HAL_GPIO_Init).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_rcc.o(i.HAL_RCC_ClockConfig).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches usart.o(i.HAL_UART_MspInit).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.HAL_UART_IRQHandler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_dma.o(i.HAL_DMA_Init).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.HAL_UART_Receive_DMA).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches main.o(i.SystemClock_Config).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_dma.o(i.DMA_CheckFifoParam).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_dma.o(i.HAL_DMA_Abort).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches main.o(i.main).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.UART_Receive_IT).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.HAL_UART_Transmit_DMA).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches dma.o(i.MX_DMA_Init).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_dma.o(i.HAL_DMA_Start_IT).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_it.o(i.USART1_IRQHandler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_cortex.o(i.HAL_NVIC_SetPriority).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.HAL_UART_Init).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches gpio.o(i.MX_GPIO_Init).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.UART_Transmit_IT).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.HAL_UART_DMAStop).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches emm_v5.o(i.Emm_V5_Vel_Control).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal.o(i.HAL_InitTick).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_msp.o(i.HAL_MspInit).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.UART_DMAError).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.UART_DMAReceiveCplt).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal.o(i.HAL_Init).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches usart.o(i.MX_USART1_UART_Init).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.UART_DMATransmitCplt).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_dma.o(i.DMA_CalcBaseAndBitshift).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_cortex.o(i.HAL_SYSTICK_Config).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_cortex.o(i.HAL_NVIC_SetPriorityGrouping).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_dma.o(i.DMA_SetConfig).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_cortex.o(i.__NVIC_SetPriority).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal.o(i.HAL_Delay).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_dma.o(i.HAL_DMA_Abort_IT).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches system_stm32f4xx.o(i.SystemInit).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_rcc.o(i.HAL_RCC_GetPCLK1Freq).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_rcc.o(i.HAL_RCC_GetPCLK2Freq).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal.o(i.HAL_IncTick).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.UART_EndRxTransfer).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.UART_EndTransmit_IT).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.UART_DMAAbortOnError).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.UART_EndTxTransfer).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_it.o(i.DMA2_Stream2_IRQHandler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_it.o(i.DMA2_Stream7_IRQHandler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_cortex.o(i.__NVIC_GetPriorityGrouping).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.UART_DMARxHalfCplt).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.UART_DMATxHalfCplt).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_rcc.o(i.HAL_RCC_GetHCLKFreq).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal.o(i.HAL_GetTick).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_it.o(i.SysTick_Handler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches main.o(i.Error_Handler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_it.o(i.BusFault_Handler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_it.o(i.HardFault_Handler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_it.o(i.MemManage_Handler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_it.o(i.UsageFault_Handler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_it.o(i.DebugMon_Handler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_it.o(i.NMI_Handler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_it.o(i.PendSV_Handler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_it.o(i.SVC_Handler).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.HAL_UART_ErrorCallback).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.HAL_UART_RxCpltCallback).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.HAL_UART_RxHalfCpltCallback).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.HAL_UART_TxCpltCallback).
-STM32F407_UART_CMD\STM32F407_UART_CMD.axf: Error: L6405E: No .ANY selector matches stm32f4xx_hal_uart.o(i.HAL_UART_TxHalfCpltCallback).
-Not enough information to list image symbols.
-Not enough information to list the image map.
-Finished: 2 information, 0 warning and 70 error messages.
-"STM32F407_UART_CMD\STM32F407_UART_CMD.axf" - 70 Error(s), 0 Warning(s).
+Program Size: Code=12056 RO-data=456 RW-data=20 ZI-data=2964  
+FromELF: creating hex file...
+"STM32F407_UART_CMD\STM32F407_UART_CMD.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -137,14 +78,13 @@ Package Vendor: ARM
    * Component: CORE Version: 5.0.1
 
 <h2>Collection of Component include folders:</h2>
-  E:\ZDT闭环步进资料\Emm_V5.0闭环步进资料\例程_STM32F407\串口_RS232_RS485通讯控制\STM32F407_串口通讯__速度模式\MDK-ARM\RTE
+  E:\gongxun1\car1\MDK-ARM\RTE
   D:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
   D:\keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.0.1
-Target not created.
 </pre>
 </body>
 </html>
