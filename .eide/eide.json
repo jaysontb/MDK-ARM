@@ -76,6 +76,9 @@
               },
               {
                 "path": "../Src/motor.c"
+              },
+              {
+                "path": "../Src/test.c"
               }
             ],
             "folders": []

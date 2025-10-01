@@ -17,7 +17,8 @@
         "files.associations": {
             "mpu6050.h": "c",
             "oled.h": "c",
-            "tim.h": "c"
+            "tim.h": "c",
+            "test.h": "c"
         }
     },
     "extensions": {}
