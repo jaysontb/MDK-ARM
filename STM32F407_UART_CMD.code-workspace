@@ -11,6 +11,9 @@
         {
             "name": "Src",
             "path": "../Src"
+        },
+        {
+            "path": "../../../Gongxun/Vision"
         }
     ],
     "settings": {
