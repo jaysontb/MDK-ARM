@@ -38,6 +38,9 @@ virtualFolder:
             - path: ../Src/test.c
             - path: ../Src/visual_comm.c
             - path: ../Src/visual_test.c
+            - path: ../Src/gripper.c
+            - path: ../Src/task_vision_gripper.c
+            - path: ../Src/test_vision_integration.c
           folders: []
     - name: Drivers
       files: []

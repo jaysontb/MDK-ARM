@@ -21,7 +21,9 @@
             "mpu6050.h": "c",
             "oled.h": "c",
             "tim.h": "c",
-            "test.h": "c"
+            "test.h": "c",
+            "servo.h": "c",
+            "gripper.h": "c"
         }
     },
     "extensions": {}
